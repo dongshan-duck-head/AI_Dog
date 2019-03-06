@@ -1,11 +1,10 @@
 import os
-import pandas as pd
 import cv2
 from glob import glob
 
 #檔案位置
 DATAS_FOLDER = "./in"
-BLOCK_DATA_FOLDER = os.path.join(DATAS_FOLDER, "dog")
+BLOCK_DATA_FOLDER = os.path.join(DATAS_FOLDER, "data")
 
 #讀取檔案
 images_per_class = {}
@@ -19,8 +18,3 @@ for class_folder_name in os.listdir(BLOCK_DATA_FOLDER):
 
 for key,value in images_per_class.items():
     print("{0} -> {1}".format(key, len(value))) 
-
-
-#train
-
-#
