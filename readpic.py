@@ -3,8 +3,8 @@ import cv2
 from glob import glob
 
 #檔案位置
-DATAS_FOLDER = "./in"
-BLOCK_DATA_FOLDER = os.path.join(DATAS_FOLDER, "data")
+DATAS_FOLDER = "./data"
+BLOCK_DATA_FOLDER = os.path.join(DATAS_FOLDER, "dogimg")
 
 #讀取檔案
 images_per_class = {}
